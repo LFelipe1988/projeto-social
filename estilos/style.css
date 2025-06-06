@@ -39,3 +39,25 @@ iframe#tela {
     width: 270px;
     height: 470px;
 }
+section#sociais {
+    text-align: right;
+}
+section img {
+    width: 50px;
+    height: auto;
+    margin: 15px;
+    border-radius: 50%;
+        /* [ border-radius: 50%;] com esse comando conseguimos deixar as bordas redondas. */
+    box-sizing: border-box;
+        /* {box-sizing} este comando é para a borda ficar dentro da box */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.481);
+
+}
+section#sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.507);
+    transform: translate(-3px, -3px);
+    /*[transform: translate] com esse comando podemos fazer os itens se mecherem  */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.649);
+    transition: transform .3s, border .2s;
+    /* [transition: transform .3s, border .2s] tempo de transição com tempo de borda, quando colocamos o mouse para fazer a ação. */
+}
